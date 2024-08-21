@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".View.StartActivity">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/news_icon"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/startText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/aldrich"
+        android:text="WELCOME"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingTop="6dp"/>
+
+    <TextView
+        android:id="@+id/introText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="@font/aldrich"
+        android:text="X NEWS PRESENTS"
+        android:textAlignment="center"
+        android:textColor="#D7484242"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="7dp"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:hint="E-mail"
+            android:inputType="text|textEmailAddress"
+            android:isScrollContainer="true"
+            android:padding="11dp"/>
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/baseline_key_24"
+            android:drawablePadding="7dp"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:hint="Password"
+            android:inputType="number|numberPassword"
+            android:padding="11dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#7986CB"
+            android:fontFamily="@font/anuphan"
+            android:onClick="signUpClicked"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="SIGN UP"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:backgroundTint="#7986CB"
+            android:fontFamily="@font/anuphan"
+            android:onClick="signInClicked"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="SIGN IN"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    </Space>
+
+    <Button
+        android:id="@+id/startWithoutLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="@font/anuphan"
+        android:onClick="anonymousLoginClick"
+        android:text="START WIHOUT LOGIN"
+        android:textColor="#7986CB"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

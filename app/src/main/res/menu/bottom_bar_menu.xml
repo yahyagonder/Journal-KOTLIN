@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="HOME" />
+    <item
+        android:id="@+id/detailsFragment"
+        android:icon="@drawable/baseline_inventory_24"
+        android:title="JOURNALS" />
+    <item
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/baseline_how_to_reg_24"
+        android:title="ABOUT" />
+
+</menu>
